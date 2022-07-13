@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_padding_tiny"
+    android:background="@color/color_light_gray"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/margin_padding_tiny">
+
+
+    <TextView
+        android:id="@+id/txtDeliveryNo"
+        style="@style/txt_views_route_cardValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_delivery_no"
+        app:layout_constraintEnd_toStartOf="@+id/txtDeliveryNoValue"
+        app:layout_constraintTop_toTopOf="@+id/txtItem" />
+
+    <TextView
+        android:id="@+id/txtDeliveryNoValue"
+        style="@style/txt_views_route_cardValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_delivery_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtItem" />
+
+
+    <TextView
+        android:id="@+id/txtCustomerName"
+        style="@style/txt_views_route_cardValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_customer_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCustomerNameValue"
+        style="@style/txt_views_route_cardValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_customer_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCustomerName"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomerName" />
+
+
+    <TextView
+        android:id="@+id/txtItem"
+        style="@style/text_views_route_cardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_tiny"
+        android:text="Item : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCustomerName" />
+
+    <TextView
+        android:id="@+id/txtItemValue"
+        style="@style/text_views_route_cardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_item_num"
+        app:layout_constraintStart_toEndOf="@id/txtItem"
+        app:layout_constraintTop_toTopOf="@id/txtItem" />
+
+
+    <TextView
+        android:id="@+id/txtProductDesc"
+        style="@style/txt_views_route_cardValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_product_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtItem" />
+
+    <TextView
+        android:id="@+id/txtProductDescValue"
+        style="@style/txt_views_route_cardValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:maxLines="4"
+        android:text="@string/dummy_product_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductDesc" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyLotsList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/dimen4dp"
+        android:background="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductDescValue" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

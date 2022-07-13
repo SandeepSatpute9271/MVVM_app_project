@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scan_item_barcode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/margin_padding_small"
+    android:background="@color/text_view_shadow_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/img_next_scan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_scan_next_barcode"
+                    style="@style/text_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_xtiny"
+                    android:text="@string/scan_next_item_barcode"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_selected_location"
+                    style="@style/text_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_xtiny"
+                    android:layout_marginTop="@dimen/margin_padding_xtiny"
+                    android:text="@string/scan_next_item_barcode"
+                    android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_next_scan"
+            android:layout_width="@dimen/dimen_toolbar_close"
+            android:layout_height="@dimen/dimen_toolbar_close"
+            android:src="@drawable/ic_qr_code_scan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

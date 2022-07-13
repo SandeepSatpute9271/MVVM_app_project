@@ -27,6 +27,7 @@ public class TemplateFragment extends BaseFragment implements View.OnClickListen
     private String mParam2;
     private @NonNull
     FragmentTemplateBinding binding;
+    //TempFragmentMotionBinding binding;
     private TemplateViewModel templateViewModel;
 
     public TemplateFragment() {

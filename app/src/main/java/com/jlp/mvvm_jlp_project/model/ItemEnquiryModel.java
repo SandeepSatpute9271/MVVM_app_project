@@ -1,29 +1,26 @@
-package com.jlp.mvvm_jlp_project.model;
-
+package com.jlp.mvvm_jlp_project.model;/*
+ * Created by Sandeep(Techno Learning) on 29,June,2022
+ */
 
 public class ItemEnquiryModel {
-   private String deliveryNumber;
-   private String deliveryNumbers;
+    private int title;
+    private String value;
 
+    public ItemEnquiryModel(int title, String value) {
+        this.title = title;
+        this.value = value;
+    }
 
-    public ItemEnquiryModel(String deliveryNumber,
-                            String deliveryNumbers
-    )
-    {
-        this.deliveryNumber = deliveryNumber;
-        this.deliveryNumbers = deliveryNumbers;
-
+    public int getTitle() {
+        return title;
     }
-    public String getDeliveryNumber() {
-        return deliveryNumber;
+    public void setTitle(int title) {
+        this.title = title;
     }
-    public void setDeliveryNumber(String deliveryNumber) {
-        this.deliveryNumber = deliveryNumber;
+    public String getValue() {
+        return value;
     }
-    public String getDeliveryNumbers() {
-        return deliveryNumbers;
-    }
-    public void setDeliveryNumbers(String deliveryNumbers) {
-        this.deliveryNumbers = deliveryNumbers;
+    public void setValue(String value) {
+        this.value = value;
     }
 }

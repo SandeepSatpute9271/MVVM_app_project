@@ -3,11 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_home"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/itemEnquiryFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="net.simplifiedcoding.ui.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_template" />
+        android:id="@+id/itemEnquiryFragment"
+        android:name="com.jlp.mvvm_jlp_project.view.common_barcode_scanner.CommonBarcodeScannerFragment"
+        android:label="Item Enquiry"
+        tools:layout="@layout/fragment_common_barcode_scanner" >
+        <action
+            android:id="@+id/action_itemEnquiryFragment_to_itemEnquiryDetailsFragment"
+            app:destination="@id/itemEnquiryDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/itemEnquiryDetailsFragment"
+        android:name="com.jlp.mvvm_jlp_project.view.common_barcode_scanner.CommonBarcodeScannerDetailsFragment"
+        android:label="fragment_item_enquiry_details"
+        tools:layout="@layout/fragment_common_barcode_scanner_details" >
+        <action
+            android:id="@+id/action_itemEnquiryDetailsFragment_to_itemEnquiryFragment"
+            app:destination="@id/itemEnquiryFragment" />
+    </fragment>
+
+
 </navigation>

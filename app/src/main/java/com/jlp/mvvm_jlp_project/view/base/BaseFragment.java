@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.jlp.mvvm_jlp_project.utils.Utils;
+
 public abstract class BaseFragment extends Fragment {
     protected abstract View initViewBinding(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState);
 
@@ -20,5 +22,8 @@ public abstract class BaseFragment extends Fragment {
         return initViewBinding(inflater, container, savedInstanceState);
     }
 
+    public boolean isNetworkConnected() {
+        return Utils.isInternetAvailable(getActivity());
+    }
 
 }

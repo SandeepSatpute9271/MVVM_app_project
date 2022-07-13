@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/dimen_std_page_margin">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/dialogHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_light_gray"
+        android:minHeight="@dimen/toolbar_height"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_padding_tiny_min"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtDialogTitle"
+            style="@style/text_views_cardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_std_page_margin"
+            android:layout_marginBottom="@dimen/dimen_std_page_margin"
+            android:text="@string/str_route_number" />
+
+        <TextView
+            android:id="@+id/txtDialogTitleValue"
+            style="@style/text_views_cardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_std_page_margin"
+            android:layout_marginBottom="@dimen/dimen_std_page_margin"
+            android:text="@string/dummy_route_number" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layDialogContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_xtiny"
+        android:minHeight="@dimen/toolbar_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogHeader">
+
+        <TextView
+            android:id="@+id/txtDialogHint"
+            style="@style/text_views_cardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_std_page_margin"
+            android:layout_marginBottom="@dimen/dimen_std_page_margin"
+            android:text="@string/enter_location_barcode_number_or_scan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_barcode"
+            style="@style/text_input_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_tiny"
+            android:hint="@string/enter_location_barcode_number_or_scan"
+            android:imeOptions="actionNext"
+            android:inputType="textCapCharacters"
+            android:maxLength="18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDialogHint" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOk"
+        style="@style/dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+
+        android:text="@string/str_ok"
+        app:layout_constraintEnd_toEndOf="@+id/layDialogContainer"
+        app:layout_constraintTop_toBottomOf="@+id/layDialogContainer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnClear"
+        style="@style/dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+
+        android:text="@string/str_clear_filter"
+        app:layout_constraintEnd_toStartOf="@+id/btnOk"
+        app:layout_constraintTop_toBottomOf="@+id/layDialogContainer" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Please enter your username and password" />
+
+
+        <EditText
+            android:id="@+id/inEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/inPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

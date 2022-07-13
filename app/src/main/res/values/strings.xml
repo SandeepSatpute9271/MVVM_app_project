@@ -46,6 +46,10 @@
     <string name="new_password_and_confirm_password_mismatch">New password fields do not match</string>
     <string name="new_password_should_be">New password should be 6-8 characters long</string>
     <string name="at_least_one_alpha_one_num_req">at least one alphabetic and one numeric character required</string>
+    <string name="alert_error_message">Some Warning data not found..!</string>
+
+
+    <string name="please_check_internet_connection">Please check internet connection</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello Blank Fragment!</string>
@@ -71,8 +75,8 @@
 
     <!-- Strings for Item Enquiry -->
     <string name="item_enquiry_title">Item Enquiry</string>
-    <string name="enter_barcode_number">Enter Barcode Number</string>
-    <string name="enter_item_barcode_number">Enter Item Barcode Number</string>
+    <string name="enter_barcode_number">Enter barcode number/scan</string>
+    <string name="enter_item_barcode_number">Enter item barcode number/scan</string>
     <string name="Next">Next</string>
     <string name="text_display_item_enquiry_key">Display Key</string>
     <string name="text_display_item_enquiry_value">Display Value</string>
@@ -82,4 +86,72 @@
     <string name="enter_barcode">Enter Barcode</string>
     <string name="invalid_barcode">Invalid Barcode</string>
     <string name="dummy_header_here">Header Here!</string>
+    <string name="str_route_number">Route Number</string>
+    <string name="str_delivery_date">Delivery Date</string>
+    <string name="str_total_deliveries">Total Deliveries</string>
+    <string name="str_total_lots">Total Lots</string>
+    <string name="dummy_route_number">R380AM20091001T01</string>
+    <string name="dummy_delivery_date">23/05/2009</string>
+    <string name="dummy_total_deliveries">15</string>
+    <string name="dummy_total_lots">10</string>
+    <string name="dummy_total_lots_loaded">16</string>
+    <string name="dummy_delivery_number">12345678</string>
+    <string name="dummy_customer_name">Jon Joe</string>
+    <string name="str_customer_name">Customer Name :</string>
+    <string name="str_delivery_no">Delivery No :</string>
+    <string name="dummy_item_num">81711111</string>
+    <string name="str_product_description">Product Description</string>
+    <string name="dummy_product_desc">XXXXXXX XXXXXXX X \nXXXXXX \nXXXXX XXXXXX XXX X XXX XX</string>
+    <string name="ok">OK</string>
+
+    <string name="update_has_failed">Update has failed</string>
+
+    <!-- Strings for Item Movement -->
+    <string name="item_movement_title">Item Movement</string>
+
+
+    <string name="enter_location_barcode_number">Enter location barcode number</string>
+    <string name="enter_location_barcode_number_or_scan">Enter location barcode number/scan</string>
+
+    <!-- Strings for carrier handover details -->
+    <string name="please_enter_details_for_handover">Please enter details for handover</string>
+    <string name="to_be_collected_and_delivered_by">To be collected and delivered by</string>
+    <string name="on">On</string>
+    <string name="delivery_to_the_customer_on">Delivery to the customer on</string>
+    <string name="latest_delivery_time">Latest delivery time</string>
+    <string name="onward_tracking_reference">Onward tracking reference</string>
+    <string name="confirm">Confirm</string>
+    <string name="handover_delivery_title">Carrier Handover Details</string>
+
+    <!-- Strings for Multi Movement -->
+    <string name="multi_movement_title">Multi Movements</string>
+    <string name="selected_location">Selected location</string>
+
+    <string name="dummy_lotSr">L</string>
+    <string name="dummy_location_b5">Location B5</string>
+    <string name="str_route_summary">Route Summary</string>
+    <string name="str_ok">Ok</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_clear_filter">Clear Filter</string>
+    <string name="str_dummy_enter_input">Enter input Text:</string>
+    <string name="dummy_dialog_title">Dialog</string>
+
+    <!-- Strings for Common detail Fragment -->
+    <string name="stored_in_location">Stored in location</string>
+    <string name="lot_number">Lot number</string>
+    <string name="product_description">Product description</string>
+    <string name="item">Item</string>
+    <string name="route_number">Route number</string>
+    <string name="delivery_number">Delivery number</string>
+    <string name="delivery_date">Delivery date</string>
+    <string name="last_recorded_location">Last recorded location</string>
+    <string name="time_of_last_move">Time of last move</string>
+    <string name="last_user_id">Last user id</string>
+    <string name="address">Address</string>
+    <string name="product_code">Product code</string>
+
+    <!-- Strings for Carrier Handover Details Fragment -->
+    <string name="carrier_collection_details">Enter delivery number/scan</string>
+    <string name="enter_delivery_barcode_number">Enter delivery barcode number/scan</string>
+    <string name="enter_delivery_barcode_number_or_scan">Enter delivery barcode number/scan</string>
 </resources>

@@ -1,9 +1,7 @@
 package com.jlp.mvvm_jlp_project.model;/*
- * Created by Sandeep(Techno Learning) on 18,June,2022
+ * Created by Sandeep(Techno Learning) on 29,June,2022
  */
 
-
-import android.util.Patterns;
 
 public class ChangePasswordRequestModel {
 

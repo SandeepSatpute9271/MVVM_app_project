@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     android:id="@+id/toolbarTop"
     android:layout_width="match_parent"
     android:layout_height="@dimen/toolbar_height"
@@ -11,7 +10,6 @@
     android:contentInsetEnd="0dp"
     android:contentInsetRight="0dp"
     android:elevation="8dp"
-
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     app:contentInsetEnd="0dp"
     app:contentInsetLeft="0dp"
@@ -69,7 +67,6 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="@dimen/dimen_std_page_margin"
             android:layout_toRightOf="@id/layLinOptions"
-
             android:lines="1"
             android:maxLines="1"
             android:padding="@dimen/dimen4dp"

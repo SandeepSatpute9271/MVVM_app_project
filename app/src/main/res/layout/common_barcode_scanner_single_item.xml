@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:layout_marginBottom="@dimen/margin_padding_normal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_list_item_title"
+            android:layout_width="0dp"
+            style="@style/text_views"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/text_display_item_enquiry_key"
+            android:textColor="@color/secondary_text_color"/>
+
+
+        <TextView
+            android:id="@+id/tv_list_item_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/text_views"
+            android:gravity="left"
+            android:layout_weight="2"
+            android:text="@string/text_display_item_enquiry_value" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/devider"/>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".view.common_barcode_scanner.CommonBarcodeScannerFragment">
+
+    <include layout="@layout/layout_guideline_std"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/item_enquiry_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.JLP_Layouts.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include
+            android:id="@+id/actionbar"
+            layout="@layout/layout_item_enquiry_top_header" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/scan_next_item_barcode"
+        layout="@layout/layout_next_item_barcode"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_enquiry_header"/>
+
+    <include
+        android:id="@+id/item_enquiry_input_field"
+        layout="@layout/input_field_barcode_scan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_xxnormal"
+        app:layout_constraintTop_toBottomOf="@+id/scan_next_item_barcode"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        style="@style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:text="@string/Next"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@+id/item_enquiry_input_field" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

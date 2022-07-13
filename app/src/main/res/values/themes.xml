@@ -6,7 +6,7 @@
         <item name="colorPrimaryVariant">@color/teal_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/black</item><!--teal_200-->
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
@@ -14,20 +14,112 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="fullscreen"  parent="Theme.JLP_Layouts">
+    <style name="fullscreen" parent="Theme.JLP_Layouts">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <!--Normal TextView-->
     <style name="text_views">
         <item name="android:textColor">@color/text</item>
         <item name="android:textSize">@dimen/text_size_normal</item>
     </style>
 
+    <style name="alert_dialog_text_views">
+        <item name="android:textColor">@color/alert_dialog_title_background</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+
+    <style name="text_views_cardTitle">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/material_text_subhead</item>
+        <item name="android:padding">@dimen/margin_padding_tiny</item>
+
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+    <style name="text_views_card_title_bold">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/material_text_title</item>
+        <item name="android:padding">@dimen/margin_padding_tiny</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="text_views_cardValue">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/material_text_body2</item>
+        <item name="android:padding">@dimen/margin_padding_tiny</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+    <style name="txt_views_route_cardValue">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/material_text_body2</item>
+        <!--<item name="android:padding">0dp</item>-->
+        <item name="android:paddingLeft">@dimen/margin_padding_tiny</item>
+        <item name="android:paddingRight">@dimen/margin_padding_tiny</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+
+    <style name="text_views_route_cardTitle">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/material_text_subhead</item>
+        <item name="android:paddingLeft">@dimen/margin_padding_tiny</item>
+        <item name="android:paddingRight">@dimen/margin_padding_tiny</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+
+    <style name="style_views_divider_black">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/material_text_subhead</item>
+        <item name="android:padding">@dimen/margin_padding_tiny</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:text"></item>
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+
+    <style name="FullScreenDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/white</item><!--@android:color/transparent-->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+
     <style name="text_input_edittext">
         <item name="android:textColor">@color/text</item>
         <item name="android:textSize">@dimen/text_size_normal</item>
         <item name="android:background">@drawable/text_input_border</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="small_text_input_edittext">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:background">@drawable/small_text_input_border</item>
         <item name="android:singleLine">true</item>
     </style>
 
@@ -38,10 +130,25 @@
         <item name="android:background">@drawable/button_background</item>
         <item name="android:textSize">@dimen/material_text_button</item>
     </style>
+
+    <style name="dialog_button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:padding">@dimen/margin_padding_xtiny</item>
+        <item name="android:layout_margin">@dimen/margin_padding_xtiny</item>
+
+        <item name="android:strokeColor">@color/white</item>
+        <!--<item name="android:buttonCornerRadius">0dp</item>-->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/material_text_button</item>
+    </style>
+
     <style name="Theme.JLP_Layouts.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="Theme.JLP_Layouts.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.JLP_Layouts.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

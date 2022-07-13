@@ -3,6 +3,8 @@ package com.jlp.mvvm_jlp_project.utils;
 import android.text.TextUtils;
 
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by Ganesha on 12/8/2016.
@@ -10,34 +12,19 @@ import java.util.Date;
 
 public class StringUtils {
 
-    public static boolean hasValue(String data) {
-        if (data == null || data.length() == 0) {
-            return false;
-        }
-        else {
-            if (data.equalsIgnoreCase("null") || data.equalsIgnoreCase("nil")) {
-                return false;
-            }
-        }
-        return true;
-    }
+    /**
+     * Validate the password with at least one alphabet and one number
+     * @param password
+     * @return true or false
+     */
+    public static boolean isValidPassword(final String password) {
+        Pattern pattern;
+        Matcher matcher;
+        final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])$";
+        pattern = Pattern.compile(PASSWORD_PATTERN);
+        matcher = pattern.matcher(password);
+        return matcher.matches();
 
-    public static boolean hasValue(Date date) {
-        if (date == null || date.toString().length()==0) {
-            return false;
-        }
-
-        return true;
-    }
-
-    public final static boolean isValidEmail(CharSequence target) {
-        return !TextUtils.isEmpty(target)
-                && android.util.Patterns.EMAIL_ADDRESS.matcher(target)
-                .matches();
-    }
-
-    public final static boolean isPasswordValid(String password) {
-        return password.length() >= 8;
     }
 
 }

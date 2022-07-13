@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.jlp.mvvm_jlp_project">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:name=".app.App"
         android:allowBackup="true"
@@ -13,20 +16,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JLP_Layouts"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <activity
-            android:name=".view.home.MainActivity"
-            android:exported="false" />
 
         <!--<activity
             android:name=".view.auth.AuthActivity"
             android:exported="true"/>-->
 
+          <!--Before commit change to auth activity -->
         <activity
-            android:name=".view.auth.AuthActivity"
+            android:name=".view.home.HomeActivity"
             android:exported="true"
-            android:theme="@style/fullscreen"
-            android:windowSoftInputMode="adjustResize">
+            android:theme="@style/Theme.JLP_Layouts.NoActionBar"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"><!--@style/fullscreen-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,15 +38,16 @@
         </activity>
 
         <activity
-            android:name=".view.home.MenuActivity"
+            android:name=".view.auth.AuthActivity"
             android:exported="true"
             android:theme="@style/Theme.JLP_Layouts.NoActionBar"
-            android:windowSoftInputMode="adjustResize">
-            <intent-filter>
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
 
 

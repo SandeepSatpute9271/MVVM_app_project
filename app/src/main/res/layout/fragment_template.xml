@@ -11,7 +11,7 @@
     <include layout="@layout/layout_guideline_std" />
 
     <include
-        android:id="@+id/home_topheader"
+        android:id="@+id/home_top_header"
         layout="@layout/layout_top_header" />
 
 
@@ -24,7 +24,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/guidelineBottom"
         app:layout_constraintEnd_toEndOf="@+id/lay_template_main"
         app:layout_constraintStart_toStartOf="@+id/lay_template_main"
-        app:layout_constraintTop_toBottomOf="@+id/home_topheader">
+        app:layout_constraintTop_toBottomOf="@+id/home_top_header">
 
         <TextView
             android:layout_width="match_parent"
